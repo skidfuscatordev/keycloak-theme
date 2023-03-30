@@ -14,7 +14,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
   -->
-  <title>React App</title>
+  <title>Skidfuscator Authentication</title>
 
   <link rel="preload" href="%PUBLIC_URL%/fonts/WorkSans/worksans-bold-webfont.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="%PUBLIC_URL%/fonts/WorkSans/worksans-medium-webfont.woff2" as="font" crossorigin="anonymous">
@@ -67,7 +67,38 @@
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <noscript>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .contain {
+        height: 100vh;
+        width: 100vw;
+        background: #212121;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        color: #dadada;
+        font-size: 2rem;
+      }
+    </style>
+    <div className="contain">
+      <div className="main">
+        <p>
+          Please enable javascript to run this app.
+          <br />
+          <a href="https://enable-javascript.com" target="_blank" rel="noreferrer">Click here to learn more.</a>
+        </p>
+      </div>
+    </div>
+  </noscript>
   <div id="root"></div>
   <!--
       This HTML file is a template.
