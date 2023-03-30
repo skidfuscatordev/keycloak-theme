@@ -11,9 +11,9 @@ createRoot(document.getElementById("root")!).render(
         <Suspense>
             {(()=>{
 
-                // if( kcLoginThemeContext !== undefined ){
-                //     return <KcLoginThemeApp kcContext={kcLoginThemeContext} />;
-                // }
+                if( kcLoginThemeContext !== undefined ){
+                    return <KcLoginThemeApp kcContext={kcLoginThemeContext} />;
+                }
 
                 if( kcAccountThemeContext !== undefined ){
                     return <KcAccountThemeApp kcContext={kcAccountThemeContext} />;
