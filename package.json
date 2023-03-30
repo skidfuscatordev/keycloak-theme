@@ -5,21 +5,21 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "keycloak": "yarn build && keycloakify",
+        "keycloak": "npm run build && keycloakify",
+        "eject-keycloak-page": "eject-keycloak-page",
         "download-builtin-keycloak-theme": "download-builtin-keycloak-theme 15.0.2"
     },
     "dependencies": {
-        "@emotion/react": "^11.9.0",
-        "keycloakify": "^6.10.0",
-        "react": "18.1.0",
-        "react-dom": "18.1.0"
+        "keycloakify": "^7.3.2",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
     },
     "devDependencies": {
-        "@types/node": "^15.3.1",
-        "@types/react": "18.0.9",
-        "@types/react-dom": "18.0.4",
-        "react-scripts": "5.0.0",
-        "typescript": "^4.7.3"
+        "@types/node": "^18.15.11",
+        "@types/react": "18.0.31",
+        "@types/react-dom": "18.0.11",
+        "react-scripts": "^5.0.1",
+        "typescript": "^5.0.2"
     },
     "eslintConfig": {
         "extends": [
